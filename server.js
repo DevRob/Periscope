@@ -17,14 +17,6 @@ var server = http.createServer(function(req , res) {
     default:
       handlers.notFound(req, res);
   }
-
-  var body = "";
-  req.on('data', function (chunk) {
-    body += chunk;
-  });
-  req.on('end', function () {
-    console.log(body);
-  });
 });
 
 server.listen(3033);
