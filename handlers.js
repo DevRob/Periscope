@@ -1,14 +1,6 @@
 const fs = require('fs');
 const crypto = require('crypto');
 
-var options = {
-  line1 : '{\n',
-  line2 : '    "dashboard": 00000,\n',
-  line3 : '    "embed": "v2",\n',
-  line4 : '    "filters": [{"name": "Filter1", "value": "value1"}, {"name": "Filter2", "value": "1234"}]\n',
-  line5 : '}'
-};
-
 var line1 = "{\n";
 var line2 = '    "dashboard": 00000,\n';
 var line3 = '    "embed": "v2",\n';
